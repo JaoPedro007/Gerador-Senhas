@@ -13,7 +13,7 @@ export function Home(){
   const [modalVisible, setModalVisible] = useState(false)
 
 
-  function generatePassoword(){
+  function generatePassword(){
     let password = ''
     for(let i = 0, n = charset.length; i < size; i++){
       password += charset.charAt(Math.floor(Math.random() * n))
@@ -45,7 +45,7 @@ export function Home(){
         />
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={generatePassoword}>
+      <TouchableOpacity style={styles.button} onPress={generatePassword}>
         <Text style={styles.buttonText}>Gerar senha</Text>
       </TouchableOpacity>
 
